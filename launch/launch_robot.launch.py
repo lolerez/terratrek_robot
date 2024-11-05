@@ -59,7 +59,7 @@ def generate_launch_description():
 
     gpio_subscriber_node = Node(
         package='terratrek_robot',  # Your current package name
-        executable='gpio_subscriber_node.py',  # Your current executable name
+        executable='gpio_launch_subscriber.py',  # Your current executable name
         name='gpio_subscriber_node',  # Optional, but good to have
         parameters=[{'use_direct_gpio': False}],  # set to true if direct pi gpio control
         output='screen',
